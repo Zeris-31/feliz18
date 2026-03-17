@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz 18 Brisseth</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-weight: normal;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.section h2 {
+    color: #e84393;
+}
+
+.message {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    padding: 30px;
+    background: #e84393;
+    color: white;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #e84393;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ffd3e0;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>🎉 Feliz 18 Años 🎂</h1>
+    <h2>Brisseth Yanela Chocca Lulo</h2>
+    <button onclick="document.getElementById('musica').play()">Presiona aquí 💕</button>
+</div>
+
+<div class="section">
+    <h2>Un mensaje para ti</h2>
+    <div class="message">
+        Hoy no cumples solo un año más… hoy empiezas una nueva etapa. 
+        Tus 18 años marcan el inicio de decisiones propias, sueños más grandes 
+        y un mundo que poco a poco se abre para ti.
+
+        Brisseth, quiero que nunca olvides lo especial que eres. 
+        Tienes una luz que no todos pueden ver, pero los que tenemos la suerte 
+        de conocerte sabemos lo fuerte, sensible y hermosa persona que hay en ti.
+
+        Tal vez nuestra historia no sea perfecta, tal vez discutimos, 
+        tal vez no siempre coincidimos… pero lo que compartimos fue real. 
+        Y eso nadie lo puede borrar.
+
+        En este nuevo año de tu vida, deseo que encuentres paz, 
+        claridad para decidir lo que quieres, 
+        y amor… un amor que te haga sentir segura, valorada y elegida.
+
+        Gracias por cada risa, cada momento, cada recuerdo.
+        Pase lo que pase, siempre voy a desearte lo mejor.
+
+        De parte de tu celocito, te deseo lo mejor en esta nueva etapa de tu vida
+        y que en otra vida podamos coincidir.
+
+        💖TE AMO MI CACHETONCITA, ¡RECUERDALO ERES UNA GRAN MUJER!💖
+
+        Feliz 18 años, Brisseth. 💖
+    </div>
+</div>
+
+<div class="section">
+    <h2>Nuestros Recuerdos</h2>
+    <div class="gallery">
+        <!-- CAMBIA LOS NOMBRES POR TUS FOTOS -->
+        <img src="foto1.jpg" alt="Nosotros 1">
+        <img src="foto2.jpg" alt="Nosotros 2">
+        <img src="foto3.jpg" alt="Nosotros 3">
+        <img src="foto4.jpg" alt="Nosotros 4">
+    </div>
+</div>
+
+<div class="footer">
+    ❤️Hecho con cariño, para ti mi BRI❤️
+</div>
+
+<!-- OPCIONAL: AGREGA TU MUSICA -->
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
